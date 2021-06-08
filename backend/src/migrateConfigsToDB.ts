@@ -6,7 +6,7 @@ import * as _fs from "fs";
 
 const fs = _fs.promises;
 
-const authorId = process.argv[2];
+const authorId = "444432489818357760";
 if (!authorId) {
   console.error("No author id specified");
   process.exit(1);
@@ -26,7 +26,7 @@ connect().then(async () => {
     const ext = parts[parts.length - 1];
     if (ext !== "yml") continue;
 
-    const id = parts.slice(0, -1).join(".");
+    const id = parts.slice(0, -1).pop();
     const key = id === "global" ? "global" : `guild-${id}`;
     if (await configs.hasConfig(key)) continue;
 

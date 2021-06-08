@@ -19,7 +19,7 @@
         "../shared/src/*"
       ]
     },
-    "sourceMap": true,
+    "sourceMap": false,
     "alwaysStrict": true,
     "noImplicitThis": true,
     "skipLibCheck": true,

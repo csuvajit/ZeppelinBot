@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{289:function(s,t,e){"use strict";e.r(t);var n=e(8),i=Object(n.a)({},(function(){var s=this.$createElement;this._self._c;return this._m(0)}),[function(){var s=this.$createElement,t=this._self._c||s;return t("div",[t("h1",[this._v("Work in progress")]),this._v(" "),t("p",[this._v("\n    This page is a work in progress.\n  ")])])}],!1,null,null,null);t.default=i.exports}}]);
+//# sourceMappingURL=0.6c3f32137192f26bcd0f.js.map

@@ -1,0 +1,84 @@
+prefix: '!'
+
+levels: {}
+
+plugins:
+
+  utility: {}
+
+  cases:
+    config:
+      case_log_channel: '848932115748093952'
+
+  mod_actions:
+    config:
+      dm_on_warn: true
+      dm_on_kick: true
+      dm_on_ban: true
+
+  mutes:
+    config:
+      mute_role: '848931602171035678'
+      dm_on_mute: true
+
+  logs:
+    config:
+      channels:
+        '848932115748093952':
+          include:
+            - AUTOMOD_ACTION
+            - BOT_ALERT
+            - CASE_CREATE
+            - CASE_DELETE
+            - CASE_UPDATE
+            - VOICE_CHANNEL_MOVE
+            - VOICE_CHANNEL_LEAVE
+            - VOICE_CHANNEL_JOIN
+            - SET_ANTIRAID_USER
+            - SET_ANTIRAID_AUTO
+            - REPEATED_MESSAGE
+            - SCHEDULED_REPEATED_MESSAGE
+            - CHANNEL_CREATE
+            - CHANNEL_DELETE
+            - DM_FAILED
+            - COMMAND
+            - VOICE_CHANNEL_FORCE_MOVE
+            - MASS_ASSIGN_ROLES
+            - MASS_UNASSIGN_ROLES
+            - MASSBAN
+            - MASSMUTE
+            - MEMBER_BAN
+            - MEMBER_FORCEBAN
+            - MEMBER_JOIN
+            - MEMBER_JOIN_WITH_PRIOR_RECORDS
+            - MEMBER_KICK
+            - MEMBER_LEAVE
+            - MEMBER_MUTE
+            - MEMBER_NICK_CHANGE
+            - MEMBER_NOTE
+            - MEMBER_ROLE_CHANGES
+            - MEMBER_RESTORE
+            - MEMBER_SOFTBAN
+            - MEMBER_TIMED_MUTE
+            - MEMBER_UNBAN
+            - MEMBER_UNMUTE
+            - MEMBER_USERNAME_CHANGE
+            - MEMBER_WARN
+            - MEMBER_ROLE_ADD
+            - MEMBER_ROLE_REMOVE
+            - MEMBER_TIMED_UNMUTE
+            - CENSOR
+            - MESSAGE_DELETE
+            - MESSAGE_DELETE_AUTO
+            - MESSAGE_DELETE_BARE
+            - MESSAGE_EDIT
+            - MESSAGE_SPAM_DETECTED
+            - CLEAN
+            - MESSAGE_DELETE_BULK
+            - MEMBER_MUTE_EXPIRED
+            - MEMBER_MUTE_REJOIN
+            - OTHER_SPAM_DETECTED
+            - POSTED_SCHEDULED_MESSAGE
+            - ROLE_CREATE
+            - ROLE_DELETE
+            - SCHEDULED_MESSAGE

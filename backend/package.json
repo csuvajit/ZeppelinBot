@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "cross-env NODE_ENV=development tsc-watch --onSuccess \"node start-dev.js\"",
     "watch-yaml-parse-test": "cross-env NODE_ENV=development tsc-watch --onSuccess \"node dist/backend/src/yamlParseTest.js\"",
-    "build": "rimraf dist && tsc",
+    "build": "tsc",
     "start-bot-dev": "cross-env NODE_ENV=development node -r ./register-tsconfig-paths.js --unhandled-rejections=strict --inspect=0.0.0.0:9229 dist/backend/src/index.js",
     "start-bot-prod": "cross-env NODE_ENV=production node -r ./register-tsconfig-paths.js --unhandled-rejections=strict dist/backend/src/index.js",
     "watch-bot": "cross-env NODE_ENV=development tsc-watch --onSuccess \"npm run start-bot-dev\"",
@@ -20,6 +20,7 @@
     "migrate-rollback-dev": "npm run build && npm run typeorm -- migration:revert",
     "test": "npm run build && npm run run-tests",
     "run-tests": "ava",
+    "restore:config": "node dist/backend/src/migrateConfigsToDB.js",
     "test-watch": "tsc-watch --onSuccess \"npx ava\""
   },
   "dependencies": {
@@ -59,7 +60,7 @@
     "regexp-worker": "^1.1.0",
     "safe-regex": "^2.0.2",
     "seedrandom": "^3.0.1",
-    "sharp": "^0.23.4",
+    "sharp": "^0.28.2",
     "strip-combining-marks": "^1.0.0",
     "tlds": "^1.203.1",
     "tmp": "0.0.33",

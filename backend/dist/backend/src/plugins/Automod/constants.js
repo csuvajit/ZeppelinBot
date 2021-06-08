@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.RecentActionType = exports.RECENT_NICKNAME_CHANGE_EXPIRY_TIME = exports.RECENT_ACTION_EXPIRY_TIME = exports.RECENT_SPAM_EXPIRY_TIME = void 0;
+const utils_1 = require("../../utils");
+exports.RECENT_SPAM_EXPIRY_TIME = 10 * utils_1.SECONDS;
+exports.RECENT_ACTION_EXPIRY_TIME = 5 * utils_1.MINUTES;
+exports.RECENT_NICKNAME_CHANGE_EXPIRY_TIME = 5 * utils_1.MINUTES;
+var RecentActionType;
+(function (RecentActionType) {
+    RecentActionType[RecentActionType["Message"] = 1] = "Message";
+    RecentActionType[RecentActionType["Mention"] = 2] = "Mention";
+    RecentActionType[RecentActionType["Link"] = 3] = "Link";
+    RecentActionType[RecentActionType["Attachment"] = 4] = "Attachment";
+    RecentActionType[RecentActionType["Emoji"] = 5] = "Emoji";
+    RecentActionType[RecentActionType["Line"] = 6] = "Line";
+    RecentActionType[RecentActionType["Character"] = 7] = "Character";
+    RecentActionType[RecentActionType["VoiceChannelMove"] = 8] = "VoiceChannelMove";
+    RecentActionType[RecentActionType["MemberJoin"] = 9] = "MemberJoin";
+    RecentActionType[RecentActionType["Sticker"] = 10] = "Sticker";
+})(RecentActionType = exports.RecentActionType || (exports.RecentActionType = {}));

@@ -1,0 +1,22 @@
+{
+  "apps": [
+    {
+      "name": "bot",
+      "cwd": "./backend",
+      "script": "npm",
+      "args": "run start-bot-prod --max-memory-restart 100M"
+    },
+    {
+      "name": "api",
+      "cwd": "./backend",
+      "script": "npm",
+      "args": "run start-api-prod --max-memory-restart 100M"
+    },
+    {
+      "name": "web",
+      "cwd": "./dashboard",
+      "script": "npm",
+      "args": "start --max-memory-restart 100M"
+    }
+  ]
+}
